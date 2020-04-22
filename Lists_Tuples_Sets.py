@@ -72,9 +72,29 @@ for item in courses:
     print(item)
 
 # to get the value and index of an item in the list use enumerate
-# for courses in enumerate(courses):
-#     print(courses)
+for courses in enumerate(courses):
+    print(courses)
 
-# or do this and you can add where things start
+# or do this and you can add where things start NOTE that this cannot work with the previous code also running for some reason
 for index, course in enumerate(courses, start=1):
     print(index, course)
+
+# put items in an index, join them with whatever you want. here it is done with a hyphen
+course_str = ' - '.join(courses2)
+print(course_str)
+
+# put the list back together
+new_list = course_str.split(' - ')
+print(new_list)
+
+# tuples are immutable, unlike lists
+
+tuple_1 = ('hist', 'math', 'art', 'psy')
+tuple_2 = tuple_1
+
+print(tuple_1)
+print(tuple_2)
+
+tuple_1[0] = 'coool'
+print(tuple_1)
+print(tuple_2)
