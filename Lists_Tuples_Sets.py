@@ -95,6 +95,30 @@ tuple_2 = tuple_1
 print(tuple_1)
 print(tuple_2)
 
-tuple_1[0] = 'coool'
-print(tuple_1)
-print(tuple_2)
+# so this wont work because you cant mutate tuple_1 NOTE code below this wouldn't run so is commented out
+# tuple_1[0] = 'coool'
+# print(tuple_1)
+# print(tuple_2)
+
+# here we are doing sets. when printed, the order changes each time. you cant have douplicates in a set
+colors = {'blue', 'red', 'green', 'black'}
+
+print(colors)
+
+# sets are optimised to find items in the set. this is done with tuples and lists as well, but this functionality is optimized in sets.
+
+print('blue' in colors)
+
+# sets are great as seeing what items are shared among multiple sets.
+
+neon_colors = {'pink', 'green', 'yellow', 'purple'}
+
+# this will show what exists in both sets
+print(colors.intersection(neon_colors))
+
+# this will show what does not exist in both sets:
+print(colors.difference(neon_colors))
+
+# print everything from both sets
+
+print(colors.union(neon_colors))
