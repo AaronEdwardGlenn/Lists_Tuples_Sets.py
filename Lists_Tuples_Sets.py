@@ -122,3 +122,7 @@ print(colors.difference(neon_colors))
 # print everything from both sets
 
 print(colors.union(neon_colors))
+
+# setting an empty set this is important NOTE
+empty_set = {}  # NO THIS WONT WORK!!
+empty_set = set()   # THIS WILL!!!!!!!!!
